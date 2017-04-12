@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>政治安全</title>
+
+    <link rel="stylesheet" href="style/bootstrap.css" />
+    <link rel="stylesheet" href="style/style.css" />
+
+</head>
+<body>
+
+    <div id="head">
+        <h4> 一、	政治安全</h4>
+        <p class="daoyu">小易和小班去某岛旅游时，正巧遇见某舰队巡洋舰在海岸线附近巡逻</p>
+        <img src="images/1.jpg" width="500px" height="300px"/>
+    </div>
+    <div id="logo">
+        <img src="images/wenhao.jpg" width="50px" height="50px">
+    </div>
+      <div id="naozhong">
+        <img src="images/naozhong.jpg"><span id="showtimes">倒计时</span>
+      </div>
+
+        <div id="main">
+            <p>1、中国有多少个省、自治区、直辖市？</p>
+          <form class="q1">
+            <input type="radio"  name="q1"  value="*" >A. 34个
+            <input type="radio"   name="q1" value="B">B．32个
+            <input type="radio" name="q1"  value="C">C．23个
+            <input type="radio"  name="q1"  value="D">D．33个
+          </form>
+            <p>2、在历史上，中国什么时间完全沦为半殖民地半封建社会？</p>
+           <form class="q2">
+            <input type="radio"  name="q2"  value="A" >A. 鸦片战争之后
+            <input type="radio"   name="q2" value="*">B. 八国联军侵华战争之后
+            <input type="radio" name="q2"  value="C">C．	第二次鸦片战争之后
+            <input type="radio"  name="q2"  value="D">D．甲午中日战争
+           </form>
+            <p>3、叙利亚发生战乱之后，中国政府组织撤侨时间？</p>
+            <form class="q3">
+            <input type="radio"  name="q3"  value="*" >A．2011年2月
+            <input type="radio"   name="q3" value="B">B．2012年1月
+            <input type="radio" name="q3"  value="C">C．2011年1月
+            <input type="radio"  name="q3"  value="D">D．2012年2月
+            </form>
+            <p>4、中国在哪些领域存在领土争端？(多选)</p>
+            <form class="q4">
+            <input type="checkbox"  name="q4"  value="*" >A．钓鱼岛
+            <input type="checkbox"   name="q4" value="B">B．帕米尔高原
+            <input type="checkbox" name="q4"  value="*">C．南海
+            <input type="checkbox"  name="q4"  value="*">D．黄岩岛
+            </form>
+            <p>5、一个国家的领土具体是指？</p>
+            <form class="q5">
+            <input type="radio"  name="q5"  value="A" >A.该国家的陆地范围
+            <input type="radio"   name="q5" value="B">B.该国家的海域范围
+            <input type="radio" name="q5"  value="C">C.该国家的领空范围
+            <input type="radio"  name="q5"  value="*">D.该国家的陆地、领海以及领空
+            </form>
+            <p>6、抗日战争胜利纪念日？</p>
+            <form class="q6">
+            <input type="radio"  name="q6"  value="*" >A．9月3日
+            <input type="radio"   name="q6" value="B">B．7月7日
+            <input type="radio" name="q6"  value="C">C．8月15日
+            <input type="radio"  name="q6"  value="D">D．9月18日
+            </form>
+            <p>7、中国在哪一条约中被迫割让乌苏里江以东包括库页岛在内约四十万平方公里的土地给俄国？</p>
+            <form class="q7">
+            <input type="radio"  name="q7"  value="A" >A．《南京条约》
+            <input type="radio"   name="q7" value="B">  B． 《瑷珲条约》
+            <input type="radio" name="q7"  value="C">  C．《天津条约》
+            <input type="radio"  name="q7"  value="*">D．《北京条约》
+            </form>
+            <p>8、中国的陆上邻国有多少个？</p>
+            <form class="q8">
+            <input type="radio"  name="q8"  value="A" >A．16
+            <input type="radio"   name="q8" value="B">  B． 15
+            <input type="radio" name="q8"  value="*">  C．14
+            <input type="radio"  name="q8"  value="D">D．13
+            </form>
+            <p>9、伊拉克战争爆发的时间？</p>
+            <form class="q9">
+            <input type="radio"  name="q9"  value="*" > A．2003年3月20日
+            <input type="radio"   name="q9" value="B"> B．2003年4月20日
+            <input type="radio" name="q9"  value="C">  C．2003年5月20日
+            <input type="radio"  name="q9"  value="D">D．2003年2月20日
+            </form>
+            <p>10、脱欧是英国哪一首相在任时提出的？</p>
+            <form class="q10">
+            <input type="radio"  name="q9"  value="*" >A．卡梅伦
+            <input type="radio"   name="q9" value="B"> B．丘吉尔
+            <input type="radio" name="q9"  value="C">  C. 特蕾莎·梅
+            <input type="radio"  name="q9"  value="D"> D．特朗普
+            </form>
+        </div>
+    <div id="bottom">
+    <input type="submit" class="btns" value="提交"  />
+    </div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+    $('.btns').on('click', function  () {
+        var correct = 0;
+        if($('.q1').find('input')[0].checked){
+            correct ++;
+        }
+        if($('.q2').find('input')[1].checked){
+            correct ++;
+        }
+        if($('.q3').find('input')[0].checked){
+            correct ++;
+        }
+
+        var input = $('.q4').find('input');
+        if(input[0].checked&&(!input[1].checked)&&input[2].checked&&input[3].checked){
+            correct++;
+        }
+        if($('.q5').find('input')[3].checked){
+            correct ++;
+        }
+        if($('.q6').find('input')[0].checked){
+            correct ++;
+        }
+        if($('.q7').find('input')[3].checked){
+            correct ++;
+        }
+        if($('.q8').find('input')[2].checked){
+            correct ++;
+        }
+        if($('.q9').find('input')[0].checked){
+            correct ++;
+        }
+        if($('.q10').find('input')[0].checked){
+            correct ++;
+        }
+        alert('你答对了'+correct+'题');
+    })
+
+
+    //设定倒数秒数
+    var t = 180;
+    //显示倒数秒数
+    function showTime(){
+        t -= 1;
+        document.getElementById('showtimes').innerHTML= t;
+        if(t==0){
+            alert("很抱歉!答题超时");
+            window.close();
+        }
+        //每秒执行一次,showTime()
+        setTimeout("showTime()",1000);
+    }
+    //执行showTime()
+    showTime();
+
+</script>
+</html>

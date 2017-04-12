@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>经济安全</title>
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+    <div id="head">
+        <h4> 三、经济安全</h4>
+        <p class="daoyu">周末小易和小班到沃尔玛超市采购生活用品，该连锁企业已经有8500家门店，分布于全球15个国家。</p>
+        <img src="images/3.jpg" width="500px" height="300px"/>
+    </div>
+
+    <div id="logo">
+        <img src="images/wenhao.jpg" width="50px" height="50px">
+    </div>
+    <div id="naozhong">
+        <img src="images/naozhong.jpg"><span id="showtimes">倒计时</span>
+    </div>
+
+    <div id="main">
+    <p>1、明确指出中国经济体制改革的目标是建立社会主义市场经济体制是在哪次会议上？</p>
+     <form class="q1">
+    <input type="radio"  name="q1"  value="*" >A．1992年中国共产党十四次全国代表大会
+    <input type="radio"   name="q1" value="B">B．1978年十一届三中全会
+    <input type="radio" name="q1"  value="C">C．1984年中共十二届三中全会
+    <input type="radio"  name="q1"  value="D">D．1997年中共十五大
+    </form>
+    <p>2、亚太经合组织有多少个成员国？</p>
+   <form class="q2">
+    <input type="radio"  name="q2"  value="A" >A．17个
+    <input type="radio"   name="q2" value="*">B.18个
+    <input type="radio" name="q2"  value="C">C.19个
+    <input type="radio"  name="q2"  value="D">D．20个
+   </form>
+    <p>3、中国目前是第几大经济体？</p>
+    <form class="q3">
+    <input type="radio"  name="q3"  value="A" >A．一
+    <input type="radio"   name="q3" value="*">B.二
+    <input type="radio" name="q3"  value="C">C.三
+    <input type="radio"  name="q3"  value="D">D．四
+    </form>
+    <p>4、2017年，中国新划定的雄安新区属于哪个省</p>
+    <form class="q4">
+    <input type="radio"  name="q4"  value="A" >A．山东省
+    <input type="radio"   name="q4" value="B">B.福建省
+    <input type="radio" name="q4"  value="*">C.河北省
+    <input type="radio"  name="q4"  value="D">D．广东省
+    </form>
+    <p>5、上海浦东新区是什么时候设立的？</p>
+     <form class="q5">
+    <input type="radio"  name="q5"  value="*" >A．1992年
+    <input type="radio"   name="q5" value="A">B.1994年
+    <input type="radio" name="q5"  value="C">C.1998年
+    <input type="radio"  name="q5"  value="D">D．1990年
+     </form>
+    <p>6、选出不属于跨太平洋伙伴关系协定包含的国家？</p>
+     <form class="q6">
+    <input type="radio"  name="q6"  value="*" >A．中国
+    <input type="radio"   name="q6" value="B">B.新加坡
+    <input type="radio" name="q6"  value="C">C.美国
+    <input type="radio"  name="q6"  value="D">D．新西兰
+     </form>
+    <p>7、《国务院关于特大安全事故行政责任追究的规定》第十九条规定特大安全事故发生后，按照国家有关规定组织调查组对事故进行调查。事故调查工作应当自事故发生之日起几天内完成？</p>
+   <form class="q7">
+    <input type="radio"  name="q7"  value="*" >A．60日
+    <input type="radio"   name="q7" value="B">B.90日
+    <input type="radio" name="q7"  value="C">C.120日
+   </form>
+    <p>8、中美贸易中，中国对美国是顺差还是逆差？</p>
+    <form class="q8">
+    <input type="radio"  name="q8"  value="*" >A．顺差
+    <input type="radio"   name="q8" value="B">B.逆差
+    </form>
+    <p>9、天津滨海新区爆炸事故造成多少人遇难？</p>
+    <form class="q9">
+    <input type="radio"  name="q9"  value="A" >A．500人左右
+    <input type="radio"   name="q9" value="B">B.400人左右
+    <input type="radio" name="q9"  value="C">C.300人左右
+    <input type="radio"  name="q9"  value="*">D．200人左右
+    </form>
+    <p>10、根据《安全生产法》规定从业人员在作业过程中，应当服从管理，所以对违章指挥仍要服从。这种说法是否正确？</p>
+    <form class="q10">
+    <input type="radio"  name="q10"  value="A" >A．正确
+    <input type="radio"   name="q10" value="*">B.错误
+    </form>
+</div>
+    <div id="bottom">
+        <input type="submit" class="btns" value="提交"  />
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+    $('.btns').on('click', function  () {
+        var correct = 0;
+
+        if($('.q1').find('input')[0].checked){
+            correct ++;
+        }
+        if($('.q2').find('input')[1].checked){
+            correct ++;
+        }
+        if($('.q3').find('input')[1].checked){
+            correct ++;
+        }
+        if($('.q4').find('input')[2].checked){
+            correct ++;
+        }
+        if($('.q5').find('input')[0].checked){
+            correct ++;
+        }
+        if($('.q6').find('input')[0].checked){
+            correct ++;
+        }
+        if($('.q7').find('input')[0].checked){
+            correct ++;
+        }
+        if($('.q8').find('input')[0].checked){
+            correct ++;
+        }
+        if($('.q9').find('input')[3].checked){
+            correct ++;
+        }
+        if($('.q10').find('input')[1].checked){
+            correct ++;
+        }
+
+        alert('你答对了'+correct+'题');
+    })
+
+
+    //设定倒数秒数
+    var t = 180;
+    //显示倒数秒数
+    function showTime(){
+        t -= 1;
+        document.getElementById('showtimes').innerHTML= t;
+        if(t==0){
+            alert("很抱歉!答题超时");
+            window.close();
+        }
+        //每秒执行一次,showTime()
+        setTimeout("showTime()",1000);
+    }
+    //执行showTime()
+    showTime();
+
+</script>
+</html>
