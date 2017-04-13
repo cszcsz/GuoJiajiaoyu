@@ -28,6 +28,7 @@ p{
 input{
     width: 20px;
     height: 20px;
+    margin: 20px;
 }
 
 #logo{
@@ -47,7 +48,7 @@ input{
     margin-right: 300px;
 }
 form{
-    margin: 15px;
+    margin: 25px;
 }
 
 @media screen and (max-width: 990px) {
@@ -60,5 +61,17 @@ form{
     }
     #naozhong{
         margin-right: 180px;
+    }
+    form {
+        margin: 25px;
+    }
+    p{
+        font-size: 100%;
+    }
+    input{
+        margin: 10px;
+    }
+    head p{
+        font-size: 100%;
     }
 }
